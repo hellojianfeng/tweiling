@@ -41,7 +41,11 @@
     "no-else-return": 0,
     "no-param-reassign": 0,
     "quotes": 0,
-    "func-names": [1, "as-needed"]
+    "func-names": [1, "as-needed"],
+    "one-var": 1,
+    "no-mixed-operators": 1,
+    "no-shadow": 1,
+    "no-prototype-builtins": 1
   },
   "env": {
     "node": true,
