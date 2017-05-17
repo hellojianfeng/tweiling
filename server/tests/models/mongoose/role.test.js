@@ -21,13 +21,13 @@ describe('test model/role.js', () => {
   });
 
   it('create new role', () => {
-    role.create(newRoleData).then( (created) => {
+    role.create(newRoleData).then((created) => {
       assert(created, 'created cannot be empty.');
       assert(created._id instanceof mongoose.Types.ObjectId, 'created id cannot be empty.');
       newRoleData._id = created._id;
       oParent = created;
       tempoaryRecords.push(newRoleData._id);
-    })
+    });
   });
 
 /*

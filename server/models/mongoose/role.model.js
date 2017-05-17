@@ -1,13 +1,13 @@
 
-import tree from './plugins/tree';
 import mongoose from 'mongoose';
+import tree from './plugins/tree';
 
-  const schema = new mongoose.Schema({
-    name: { type: String },
-    node: { type: String },
-    space: { type: mongoose.Schema.Types.ObjectId, ref: 'Space' },
-  });
+const schema = new mongoose.Schema({
+  name: { type: String },
+  node: { type: String },
+  space: { type: mongoose.Schema.Types.ObjectId, ref: 'Space' },
+});
 
-  schema.plugin(tree);
+schema.plugin(tree);
 
-  export default  mongoose.model('Role', schema);
+export default mongoose.model('Role', schema);
